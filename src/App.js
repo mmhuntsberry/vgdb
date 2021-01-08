@@ -3,7 +3,7 @@ import List from "./components/List";
 import Show from "../src/views/games/show";
 import "./styles/base/base.css";
 import "./styles/base/variables.css";
-import "./App.css";
+// import "./App.css";
 
 function App() {
   return (

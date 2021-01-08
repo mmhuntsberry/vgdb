@@ -1,0 +1,37 @@
+.hero__container {
+  position: relative;
+}
+
+.hero__image {
+  width: 100vw;
+  /* max-width: 800px; */
+  height: 540px;
+  filter: brightness(0.3);
+}
+
+.hero__text__container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-left: 16px;
+  padding-bottom: 8px;
+  z-index: 9999;
+  color: white;
+}
+
+.hero__title {
+  margin: 0;
+  color: var(--white);
+  font-size: calc(1em + (3vw - 0.3vmin));
+  font-weight: var(--font-weight-light);
+}
+
+.hero__details {
+  /* display: none; */
+  margin: 0;
+  margin-left: var(--spacing-06);
+  color: var(--grey-05);
+  font-size: var(--body-font-size-05);
+}
