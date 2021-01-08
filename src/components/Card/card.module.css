@@ -1,0 +1,32 @@
+.card__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 200px;
+  border: 0;
+  background-color: transparent;
+  color: var(--grey-01);
+  font-size: var(--body-font-size-02);
+  line-height: 1.5;
+}
+
+.card__image {
+  width: 100%;
+  height: 250px;
+  margin-right: var(--spacing-04);
+  margin-bottom: var(--spacing-02);
+  /* border-radius: var(--spacing-01); */
+  object-fit: cover;
+}
+
+.card__title {
+  font-weight: var(--font-weight-bold);
+  width: 175px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__subtitle {
+  color: var(--grey-02);
+}
