@@ -6,6 +6,7 @@ import {
   hero__text__container,
   hero__title,
   hero__details,
+  hero__image__container,
 } from "./show.module.css";
 
 const Show = () => {
@@ -30,7 +31,9 @@ const Show = () => {
               <span className={hero__details}>{game.release_year}</span>
               <span className={hero__details}>{game.developer}</span>
             </div>
-            <img src={game.hero} alt="" className={hero__image} />
+            <div className={hero__image__container}>
+              <img src={game.hero} alt="" className={hero__image} />
+            </div>
           </div>
           <img src={game.box_art} alt={game.title} />
           <p>{game.synopsis || "No synopsis is available."}</p>
