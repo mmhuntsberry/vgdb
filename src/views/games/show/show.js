@@ -7,6 +7,10 @@ import {
   hero__title,
   hero__details,
   hero__image__container,
+  game__info__container,
+  game__art,
+  game__synopsis,
+  game__trailer,
 } from "./show.module.css";
 
 const Show = () => {
@@ -31,13 +35,27 @@ const Show = () => {
               <span className={hero__details}>{game.release_year}</span>
               <span className={hero__details}>{game.developer}</span>
             </div>
-            <div className={hero__image__container}>
-              <img src={game.hero} alt="" className={hero__image} />
-            </div>
+            <div
+              style={{ backgroundImage: `url(${game.hero})` }}
+              className={hero__image}
+            ></div>
           </div>
-          <img src={game.box_art} alt={game.title} />
-          <p>{game.synopsis || "No synopsis is available."}</p>
-          {/* <video src={game.trailer}></video> */}
+          <div className={game__info__container}>
+            <aside>
+              <img className={game__art} src={game.box_art} alt={game.title} />
+            </aside>
+            <section>
+              <p className={game__synopsis}>
+                {game.synopsis || "No synopsis is available."}
+              </p>
+              <iframe
+                className={game__trailer}
+                title={game.title}
+                src={game.trailer}
+                frameborder="0"
+              ></iframe>
+            </section>
+          </div>
         </>
       ) : (
         <p>Loading...</p>
