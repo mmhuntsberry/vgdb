@@ -6,7 +6,6 @@ import {
   hero__text__container,
   hero__title,
   hero__details,
-  hero__image__container,
   game__info__container,
   game__art,
   game__synopsis,
@@ -41,9 +40,7 @@ const Show = () => {
             ></div>
           </div>
           <div className={game__info__container}>
-            <aside>
-              <img className={game__art} src={game.box_art} alt={game.title} />
-            </aside>
+            <img className={game__art} src={game.box_art} alt={game.title} />
             <section>
               <p className={game__synopsis}>
                 {game.synopsis || "No synopsis is available."}

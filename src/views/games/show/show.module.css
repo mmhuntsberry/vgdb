@@ -49,13 +49,38 @@
 
 .game__info__container {
   display: grid;
-  grid-template-columns: min-content 1fr;
+  grid-template-columns: 1fr;
   width: 80vw;
-  margin: 0 auto;
+  margin: 32px auto;
 }
 
 .game__trailer {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.game__art {
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.game__synopsis {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 672px) {
+  .game__info__container {
+    grid-template-columns: min-content 1fr;
+  }
+
+  .game__art {
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width: 1056px) {
+  .game__trailer {
+    height: 640px;
+  }
 }
