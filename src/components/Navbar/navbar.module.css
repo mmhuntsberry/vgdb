@@ -1,6 +1,57 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.nav__search__container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1.5rem 20px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 25px;
   height: 50px;
+}
+
+.nav__search__container:focus-within img {
+  display: none;
+}
+
+.nav__search__container:focus-within .nav__search {
+  grid-column: 1/4;
+}
+
+.nav__search__container:focus-within .nav__search::placeholder {
+  color: transparent;
+}
+
+.search__icon {
+  padding: 0.5rem;
+  grid-row: 1;
+  grid-column: 1/2;
+  z-index: 2;
+}
+
+.nav__search {
+  border: 0;
+  padding-left: 1rem;
+  grid-column: 2/4;
+  grid-row: 1;
+  outline: none;
+}
+
+.display__button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #d6d6d6;
+  background-color: transparent;
+}
+
+.filter__container {
+  position: relative;
 }

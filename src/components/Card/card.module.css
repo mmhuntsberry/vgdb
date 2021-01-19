@@ -6,7 +6,7 @@
   border: 0;
   background-color: transparent;
   color: var(--grey-01);
-  font-size: var(--body-font-size-02);
+  font-size: var(--body-font-size-00);
   line-height: 1.5;
 }
 
@@ -15,7 +15,7 @@
   height: 250px;
   margin-right: var(--spacing-04);
   margin-bottom: var(--spacing-02);
-  /* border-radius: var(--spacing-01); */
+  border-radius: 8px;
   object-fit: cover;
 }
 
